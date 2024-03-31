@@ -1,8 +1,9 @@
 import React from "react";
 import './Navbar.css';
+import SearchForm from "./SearchForm";
 
 const NavBar = () => {
-    const isLoggedIn = true;
+    const isLoggedIn = false;
 
     return (
         <nav className="navbar">
@@ -18,15 +19,12 @@ const NavBar = () => {
                 </li>
             </ul>
 
-            <div className="navbar-search">
-                <input type="text" placeholder="Search for any Books" className="navbar-search-input" />
-            </div>
+            <SearchForm />
 
             {isLoggedIn ? (
                 <div className="navbar-profile">
                     <a href="/borrow" className="navbar-link">Borrow a Book</a>
                     <a href="/return" className="navbar-link">Return a Book</a>
-                    <a href="/profile" className="navbar-link">Profile</a>
                 </div>
             ) : (
                 <div className="navbar-buttons">

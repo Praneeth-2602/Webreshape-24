@@ -39,7 +39,7 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 
 label {
@@ -55,7 +55,7 @@ input {
     padding: 5px;
     outline: none;
     background: none;
-    border: none;
+    border: 1px solid #f6f6f6f6;
     font-size: 1.5rem;
     color: var(--white);
 }
@@ -67,7 +67,7 @@ button{
     border-radius: 10px;
     border-radius: 5px;
     border: 1px solid white;
-  }
+}
 
 button:hover{
     border: 1px solid #fff;
@@ -78,11 +78,11 @@ button:hover{
     box-shadow: 5px 5px 20px rgba(246, 242, 242, 0.3);
     transition: all 0.2s ease-in-out;
     background: var(--white);
-  }
+}
 
 button:hover a{
-    color: var(--lightDark);
-  }
+    color: #000;
+}
 
 form div .underline{
     position: relative;
@@ -114,4 +114,14 @@ form div input:focus ~ .underline::after,
 form div input:valid ~ .underline::after{    
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.button-group a {
+    margin-left: 50px;
 }

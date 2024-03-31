@@ -121,11 +121,13 @@
         margin-right: 20px;
         background: #ffffff;
         border-radius: 20px;
+        padding: 2px;
     }
 
     .navbar-search-input {
         padding: 10px;
         font-size: 1rem;
+        color: #000;
     }
 
     .navbar-profile{
