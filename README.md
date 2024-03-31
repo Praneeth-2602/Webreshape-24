@@ -1,71 +1,63 @@
-# Getting Started with Create React App
+# Library Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is a library management system built using the MERN stack (MongoDB, Express.js, React.js, Node.js). The system aims to streamline the process of managing books, borrowers, and transactions in a library setting. It provides librarians with efficient tools to manage the library’s collection and facilitates user interaction for borrowers.
 
-## Available Scripts
+## Features
+- User authentication and authorization to differentiate between librarians and borrowers.
+- CRUD operations for managing books, borrowers, and transactions.
+- Book borrowing system with features for borrowing, returning, and renewing books.
+- Intuitive and user-friendly interface for both librarians and borrowers.
+- Responsive design for compatibility with different devices and screen sizes.
 
-In the project directory, you can run:
+## Technologies Used
+- MongoDB: A NoSQL database for storing book, borrower, and transaction data.
+- Express.js: A web application framework for building backend APIs.
+- React.js: A JavaScript library for building user interfaces.
+- Node.js: A JavaScript runtime environment for server-side development.
+- JWT (JSON Web Tokens): Used for user authentication and authorization.
 
-### `npm start`
+## Getting Started
+To run this project locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+git clone <repository-url>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+css
+Copy code
+2. Navigate to the project directory:
+cd library-management-system
 
-### `npm test`
+markdown
+Copy code
+3. Install dependencies for both backend and frontend:
+cd backend
+npm install
+cd ../frontend
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+markdown
+Copy code
+4. Start the backend server:
+cd ../backend
+npm start
 
-### `npm run build`
+markdown
+Copy code
+5. Start the frontend development server:
+cd ../frontend
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+markdown
+Copy code
+6. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Configuration
+- MongoDB URI: Set the connection URI for your MongoDB database in `backend/config/db.js`.
+- JWT Secret: Set the secret key for JWT token generation in `backend/config/config.js`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
+Contributions are welcome! Feel free to submit pull requests or open issues for any bugs or feature requests.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Webreshape-24
+## License
+This project is licensed under the [MIT License](LICENSE).

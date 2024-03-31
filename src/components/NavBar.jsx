@@ -24,8 +24,6 @@ const NavBar = () => {
                 </li>
             </ul>
 
-            <SearchForm />
-
             <ul className="navbar-nav me-auto mb-2">
         
        {

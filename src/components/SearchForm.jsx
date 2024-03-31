@@ -1,6 +1,7 @@
 import React from 'react';
 import Book from './Book';
 import { useState } from 'react';
+import './SearchForm.css'
 
 const SearchForm = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -18,7 +19,7 @@ const SearchForm = () => {
     };
 
     return (
-        <div>
+        <div className='search-form'>
             <input
                 type="text"
                 value={searchTerm}
@@ -27,10 +28,8 @@ const SearchForm = () => {
             />
             <button onClick={() => {
                 handleSearch();
-                // window.location.href = '/search';
-               
-            }}>Search</button>
-             {searchResults.length > 0 && (
+                window.location.href = '/search';
+                {searchResults.length > 0 && (
                 <ul>
                     {searchResults.map((book) => (
                         <Book
@@ -45,6 +44,7 @@ const SearchForm = () => {
                     ))}
                 </ul>
             )}
+            }}>Search</button>
 
             
         </div>

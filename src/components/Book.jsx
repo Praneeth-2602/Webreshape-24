@@ -10,6 +10,8 @@ function Book(props) {
             <p>Edition Count: {edition_count}</p>
             <p>First Publish Year: {first_publish_year}</p>
             <img src={cover_img} alt={title} />
+
+            <button href="/borrow">Borrow</button>
         </div>
     );
 }
