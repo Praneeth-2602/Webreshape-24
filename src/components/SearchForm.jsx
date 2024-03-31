@@ -27,8 +27,10 @@ const SearchForm = () => {
             />
             <button onClick={() => {
                 handleSearch();
-                window.location.href = '/search';
-                {searchResults.length > 0 && (
+                // window.location.href = '/search';
+               
+            }}>Search</button>
+             {searchResults.length > 0 && (
                 <ul>
                     {searchResults.map((book) => (
                         <Book
@@ -43,7 +45,6 @@ const SearchForm = () => {
                     ))}
                 </ul>
             )}
-            }}>Search</button>
 
             
         </div>
