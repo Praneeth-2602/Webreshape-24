@@ -19,8 +19,6 @@ const NavBar = () => {
                 </li>
             </ul>
 
-            <SearchForm />
-
             {isLoggedIn ? (
                 <div className="navbar-profile">
                     <a href="/borrow" className="navbar-link">Borrow a Book</a>

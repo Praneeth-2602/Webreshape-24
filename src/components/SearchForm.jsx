@@ -1,6 +1,7 @@
 import React from 'react';
 import Book from './Book';
 import { useState } from 'react';
+import './SearchForm.css'
 
 const SearchForm = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -18,34 +19,29 @@ const SearchForm = () => {
     };
 
     return (
-        <div>
+        <div className='search-form'>
             <input
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search books..."
             />
-            <button onClick={() => {
-                handleSearch();
-                window.location.href = '/search';
+            <button className='search-btn' onClick={() => {handleSearch();}}>Search</button>
                 {searchResults.length > 0 && (
-                <ul>
-                    {searchResults.map((book) => (
-                        <Book
-                            key={book.key}
-                            id={book.key}
-                            title={book.title}
-                            author={book.author}
-                            edition_count={book.edition_count}
-                            first_publish_year={book.first_publish_year}
-                            cover_img={book.cover_img}
-                        />
-                    ))}
-                </ul>
-            )}
-            }}>Search</button>
-
-            
+                    <ul>
+                        {searchResults.map((book) => (
+                            <Book
+                                key={book.key}
+                                id={book.key}
+                                title={book.title}
+                                author={book.author}
+                                edition_count={book.edition_count}
+                                first_publish_year={book.first_publish_year}
+                                cover_img={book.cover_img}
+                            />
+                        ))}
+                    </ul>
+                )}
         </div>
     );
 };

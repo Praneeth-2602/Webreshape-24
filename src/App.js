@@ -3,7 +3,6 @@ import Home from './screens/Home.jsx';
 import Login from './screens/Login.jsx';
 import Signup from './screens/SignUp.jsx';
 import ReturnBooks from './screens/ReturnBooks.jsx';
-import Search from './screens/Search.jsx';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
@@ -23,7 +22,6 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/return" element={<ReturnBooks />} />
-          <Route path="/search" element={<Search />} />
 
         </Routes>
       </div>
