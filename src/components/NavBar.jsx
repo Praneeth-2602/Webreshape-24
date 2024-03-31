@@ -7,7 +7,7 @@ const NavBar = () => {
  
   const handleHome = ()=>{
     localStorage.removeItem("authToken")
-    navigate('/')
+  
   }
 
     return (
@@ -47,7 +47,7 @@ const NavBar = () => {
           :<div>
        
        <li className="navbar-item">
-                    <a onClick={handleHome} className="navbar-link">Logout</a>
+                    <a href="/" className="navbar-link" onClick={handleHome}>Logout</a>
                 </li>
        </div>
       
