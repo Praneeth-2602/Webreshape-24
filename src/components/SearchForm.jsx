@@ -9,7 +9,7 @@ const SearchForm = () => {
 
     const handleSearch = async () => {
         try {
-            const response = await fetch(`https://openlibrary.org/search.json?q=${searchTerm}`);
+            const response = await fetch(https://openlibrary.org/search.json?q=${searchTerm});
             const data = await response.json();
             console.log('Fetched data:', data); // Add this line to console log the data
             setSearchResults(data.docs);
@@ -28,8 +28,10 @@ const SearchForm = () => {
             />
             <button onClick={() => {
                 handleSearch();
-                window.location.href = '/search';
-                {searchResults.length > 0 && (
+                
+            }}>Search</button>
+
+            {searchResults.length > 0 && (
                 <ul>
                     {searchResults.map((book) => (
                         <Book
@@ -44,13 +46,8 @@ const SearchForm = () => {
                     ))}
                 </ul>
             )}
-            }}>Search</button>
-
-            
         </div>
     );
 };
 
 export default SearchForm;
-
-
