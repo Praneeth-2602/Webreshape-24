@@ -1,0 +1,116 @@
+/* LoginForm.css */
+body{
+    display: flex;
+    flex-direction: column;
+    background: #000;
+}
+
+.login-form{
+    text-align: center;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.15);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(19.6px);
+-webkit-backdrop-filter: blur(19.6px);
+    padding: 50px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px;
+    top: 100px;
+    width: 475px;
+    height: 500px;
+}
+
+div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 375px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+button{
+    padding: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+
+button:hover{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(246, 242, 242, 0.3);
+    transition: all 0.2s ease-in-out;
+    background: var(--white);
+  }
+
+button:hover a{
+    color: var(--lightDark);
+  }
+
+form div .underline{
+    position: relative;
+}
+
+form div .underline::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(#141e30, #528dd0);
+    left: 0;
+    bottom: 0;  
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+form div .underline::before{
+    content: '';
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;    
+}
+
+form div input:focus ~ .underline::after,
+form div input:valid ~ .underline::after{    
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
