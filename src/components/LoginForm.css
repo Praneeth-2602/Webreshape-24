@@ -3,6 +3,8 @@ body{
     display: flex;
     flex-direction: column;
     background: #000;
+    color: #000;
+    color: #ffffff;
 }
 
 .login-form{
@@ -20,13 +22,13 @@ backdrop-filter: blur(19.6px);
     top: 100px;
     width: 475px;
     height: 500px;
+    color: #ffffff;
 }
 
 div {
     text-align: left;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
 h2 {
@@ -113,4 +115,3 @@ form div input:valid ~ .underline::after{
     transform: scaleX(1);
     transform-origin: left;
 }
-

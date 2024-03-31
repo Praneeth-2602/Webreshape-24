@@ -1,4 +1,3 @@
-/* LoginForm.css */
 .signup-form{
     text-align: center;
 /* From https://css.glass */
@@ -30,6 +29,7 @@ div {
     font-size: 3.5rem;
     margin-bottom: 20px;
     text-align: center;
+    color: #ffffff;
 }
 
 form {
