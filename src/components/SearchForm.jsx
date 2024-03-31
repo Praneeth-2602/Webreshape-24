@@ -9,7 +9,7 @@ const SearchForm = () => {
 
     const handleSearch = async () => {
         try {
-            const response = await fetch('https://openlibrary.org/search.json?q=${searchTerm}');
+            const response = await fetch(`https://openlibrary.org/search.json?q=${searchTerm}`);
             const data = await response.json();
             console.log('Fetched data:', data); // Add this line to console log the data
             setSearchResults(data.docs);
