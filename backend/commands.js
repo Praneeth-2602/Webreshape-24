@@ -87,12 +87,11 @@ const loginUser =
 
 const borrow = async (req, res) => {
     try {
-        const { bookName } = req.body.title;
-        const { userName } = req.body.name;
+      
 
         await Borrower.create({
-            name: userName,
-            bookTitle: bookName
+            name: req.body.name,
+            bookTitle: req.body.title
         });
 
         res.json({ success: true });
