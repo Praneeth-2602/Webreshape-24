@@ -10,13 +10,14 @@ function Book(props) {
         };
     
         try {
-            const response = await fetch('http://localhost:5000/api/loginuser', {
+            const response = await fetch('http://localhost:5000/api/borrow', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
             });
+            alert('Book borrowed successfully');
             // Handle the response
         } catch (error) {
             // Handle the error
